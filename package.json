@@ -1,0 +1,19 @@
+{
+  "name": "first-typescript",
+  "version": "1.0.0",
+  "description": "This document outlines the most important TypeScript features that go beyond plain JavaScript. Use it as a reference when learning or working with TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
