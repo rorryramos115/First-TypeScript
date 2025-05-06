@@ -24,9 +24,12 @@ This document outlines the most important TypeScript features that go beyond pla
 
 ## 🚀 Get Started
 
-1. **Install TypeScript globally**
-   ```bash
-   npm install -g typescript
-   npm init -y
-   npm install --save-dev typescript ts-node @types/node
-   npx tsc --init
+Follow these steps to run your TypeScript code and see the output in the terminal:
+
+### 1. Install TypeScript and Initialize the Project
+
+```bash
+npm install -g typescript
+npm init -y
+npm install --save-dev typescript ts-node @types/node
+npx tsc --init
