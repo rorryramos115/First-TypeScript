@@ -10,12 +10,12 @@ function greet(name) {
 const Greet = greet("Rorry");
 console.log("Static type Ex: 2. ", Greet);
 const user = { name: "Rorry Ramos", age: 34, noob: true };
-console.log("Interfaces Ex: ", user);
+console.log("Interfaces Ex: 1. ", user);
 function welcome(person) {
     return "Welcome, " + person.name + ", Course: " + person.course;
 }
 const welcomeGreetings = welcome({ name: "Rorry", course: "BSIT" });
-console.log(welcomeGreetings);
+console.log("Interfaces Ex: 1. ", welcomeGreetings);
 const point = { x: 10, y: 5 };
 console.log("Types Ex: ", point);
 // =======================================================================
@@ -38,14 +38,33 @@ var Directions;
 })(Directions || (Directions = {}));
 console.log("Enums Ex: 2. ", Directions.Down);
 // ======================================================================
-// Generics
+// 4. Generics
 //  Example 1
 function indentity(value) {
     return value;
 }
-console.log(indentity("Generics Ex 1"));
+const generic = indentity("Generics Ex 1");
+console.log("Generic Ex: 1. ", generic);
 //  Example 2
 function merge(a, b) {
     return Object.assign(Object.assign({}, a), b);
 }
-console.log(merge("Hello", 2));
+const mergeData = merge("Hello", 2);
+console.log("Generic Ex: 2. ", mergeData);
+// ====================================================================
+// 5. Type Inference
+// xample 1
+let count = 5;
+console.log("Type Inference Ex: 1. ", count);
+// Example 2
+const title = "Welcome";
+console.log("Type Inference Ex: 2. ", title);
+// ===================================================================
+// Union & Intersection Types
+// Example 1 (Union)
+let value;
+value = 42;
+console.log("Union & Intersection Types Ex: 1. ", value);
+const person = { name: "Bob", age: 30 };
+console.log("Union & Intersection Types Ex: 2. ", person);
+// ===================================================================

@@ -56,7 +56,7 @@ console.log("Enums Ex: 2. ", Directions.Down);
 
 // ======================================================================
 
-// Generics
+// 4. Generics
 //  Example 1
 function indentity<T>(value: T): T {
     return value;
@@ -70,3 +70,31 @@ function merge <T, U>(a: T, b: U): T & U {
 }
 const mergeData = merge("Hello", 2)
 console.log("Generic Ex: 2. ", mergeData);
+
+// ====================================================================
+
+// 5. Type Inference
+// xample 1
+let count = 5;
+console.log("Type Inference Ex: 1. ", count);
+
+// Example 2
+const title = "Welcome";
+console.log("Type Inference Ex: 2. ", title);
+
+// ===================================================================
+
+// Union & Intersection Types
+// Example 1 (Union)
+let value: string | number;
+value = 42;
+console.log("Union & Intersection Types Ex: 1. ", value);
+
+// Example 2 (Intersection)
+type A = { name: string };
+type B = { age: number };
+type C = A & B;
+const person: C = { name: "Bob", age: 30 };
+console.log("Union & Intersection Types Ex: 2. ", person);
+
+// ===================================================================
