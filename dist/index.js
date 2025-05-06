@@ -60,7 +60,7 @@ console.log("Type Inference Ex: 1. ", count);
 const title = "Welcome";
 console.log("Type Inference Ex: 2. ", title);
 // ===================================================================
-// Union & Intersection Types
+// 6. Union & Intersection Types
 // Example 1 (Union)
 let value;
 value = 42;
@@ -68,3 +68,20 @@ console.log("Union & Intersection Types Ex: 1. ", value);
 const person = { name: "Bob", age: 30 };
 console.log("Union & Intersection Types Ex: 2. ", person);
 // ===================================================================
+// 7. Tuples
+//  Example 1
+let tuple = ["Age", 30];
+console.log("Tuples Ex: 1. ", tuple);
+// Example 2
+const user1 = ["Admin", true];
+console.log("Tuples Ex: 2. ", user1);
+// ===================================================================
+//  8. Strict Null Checks
+// Example 1
+let name1 = null;
+console.log("Strict Null Checks Ex: 1. ", name1);
+// Example 2
+function print(value) {
+    console.log("Strict Null Checks Ex: 2. ", value === null || value === void 0 ? void 0 : value.toUpperCase());
+}
+print("Rorry");

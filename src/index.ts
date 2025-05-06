@@ -110,3 +110,16 @@ console.log("Tuples Ex: 2. ", user1);
 
 // ===================================================================
 
+//  8. Strict Null Checks
+// Example 1
+let name1: string | null = null;
+console.log("Strict Null Checks Ex: 1. ", name1);
+
+// Example 2
+function print(value?: string) {
+   console.log("Strict Null Checks Ex: 2. ", value?.toUpperCase());
+}
+print("Rorry");
+
+
+// ===================================================================
