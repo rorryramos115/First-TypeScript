@@ -11,6 +11,11 @@ const Greet = greet("Rorry");
 console.log("Static type Ex: 2. ", Greet);
 const user = { name: "Rorry Ramos", age: 34, noob: true };
 console.log("Interfaces Ex: ", user);
+function welcome(person) {
+    return "Welcome, " + person.name + ", Course: " + person.course;
+}
+const welcomeGreetings = welcome({ name: "Rorry", course: "BSIT" });
+console.log(welcomeGreetings);
 const point = { x: 10, y: 5 };
 console.log("Types Ex: ", point);
 // =======================================================================

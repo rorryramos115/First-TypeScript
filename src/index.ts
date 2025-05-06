@@ -14,16 +14,27 @@ console.log("Static type Ex: 2. ", Greet);
 // =======================================================================
 
 // 2. Interfaces & Types
-// Example 1 (Interface):
+// Example 1 (Interface) 1:
 interface User {
     name: string;
     age: number;
     noob: Boolean;
 }
 const user: User = { name:"Rorry Ramos", age: 34, noob: true};
-console.log("Interfaces Ex: ", user);
+console.log("Interfaces Ex: 1. ", user);
 
-// Example 2 (Type Alias):
+// Example 1 (Interface with object) 2:
+interface Person {
+    name: string,
+    course: string,
+}
+function welcome(person: Person) {
+    return "Welcome, " + person.name + ", Course: " + person.course;
+}
+const welcomeGreetings = welcome({name: "Rorry", course: "BSIT"});
+console.log("Interfaces Ex: 1. ", welcomeGreetings);
+
+// Example 3 (Type Alias):
 type Point = { x:number, y:number};
 const point: Point = { x: 10, y: 5};
 console.log("Types Ex: ", point);
@@ -50,10 +61,12 @@ console.log("Enums Ex: 2. ", Directions.Down);
 function indentity<T>(value: T): T {
     return value;
 }
-console.log(indentity("Generics Ex 1"));
+const generic = indentity("Generics Ex 1");
+console.log("Generic Ex: 1. ", generic);
 
 //  Example 2
 function merge <T, U>(a: T, b: U): T & U {
     return{...a, ...b}
 }
-console.log(merge("Hello", 2));
+const mergeData = merge("Hello", 2)
+console.log("Generic Ex: 2. ", mergeData);
