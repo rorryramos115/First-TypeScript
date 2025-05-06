@@ -32,3 +32,15 @@ var Directions;
     Directions["Down"] = "Down";
 })(Directions || (Directions = {}));
 console.log("Enums Ex: 2. ", Directions.Down);
+// ======================================================================
+// Generics
+//  Example 1
+function indentity(value) {
+    return value;
+}
+console.log(indentity("Generics Ex 1"));
+//  Example 2
+function merge(a, b) {
+    return Object.assign(Object.assign({}, a), b);
+}
+console.log(merge("Hello", 2));

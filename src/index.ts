@@ -44,3 +44,16 @@ enum Directions {
 console.log("Enums Ex: 2. ", Directions.Down);
 
 // ======================================================================
+
+// Generics
+//  Example 1
+function indentity<T>(value: T): T {
+    return value;
+}
+console.log(indentity("Generics Ex 1"));
+
+//  Example 2
+function merge <T, U>(a: T, b: U): T & U {
+    return{...a, ...b}
+}
+console.log(merge("Hello", 2));
