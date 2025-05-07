@@ -6,19 +6,19 @@ This document outlines the most important TypeScript features that go beyond pla
 
 ## ✅ Concepts & Descriptions
 
-| **Concept**                | **Description**                                                                 |
-|---------------------------|---------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------|
+| **Concept**               | **Description**                                                                |
+|---------------------------|--------------------------------------------------------------------------------|
 | **Static Typing**         | Assign types to variables, function parameters, and return values to catch errors at compile time. |
-| **Interfaces & Types**    | Define custom shapes for objects, functions, and other structures.              |
-| **Enums**                 | Define a set of named constants. Useful for managing fixed values.              |
+| **Interfaces & Types**    | Define custom shapes for objects, functions, and other structures.             |
+| **Enums**                 | Define a set of named constants. Useful for managing fixed values.             |
 | **Generics**              | Write reusable components and functions that work with multiple types.         |
 | **Type Inference**        | TypeScript can guess the type even if you don't explicitly declare it.         |
 | **Union & Intersection Types** | Combine or restrict types using `|` (union) or `&` (intersection).        |
 | **Tuples**                | Arrays with fixed length and known types at specific positions.                |
 | **Strict Null Checks**    | Prevents `null` or `undefined` errors by enabling strict type checking. (`strictNullChecks`) |
-| **Access Modifiers**      | Control visibility in classes using `public`, `private`, and `protected`.      |
 | **Type Assertions**       | Tell TypeScript what type you expect using `as Type` syntax.                   |
-| **Decorators (Advanced)** | Use annotations to modify classes and properties (commonly used in Angular).   |
+|------------------------------------------------------------------------------------------------------------|
 
 ---
 

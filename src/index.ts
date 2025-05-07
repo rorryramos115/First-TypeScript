@@ -123,3 +123,11 @@ print("Rorry");
 
 
 // ===================================================================
+
+// 9.Type Assertions
+// Example 1
+let someValue: any = "Hello Rorry";
+let strLength: number = (someValue as string).length;
+console.log("Type Assertions Ex: 1. ", strLength)
+
+

@@ -85,3 +85,9 @@ function print(value) {
     console.log("Strict Null Checks Ex: 2. ", value === null || value === void 0 ? void 0 : value.toUpperCase());
 }
 print("Rorry");
+// ===================================================================
+// 9.Type Assertions
+// Example 1
+let someValue = "Hello Rorry";
+let strLength = someValue.length;
+console.log("Type Assertions Ex: 1. ", strLength);
